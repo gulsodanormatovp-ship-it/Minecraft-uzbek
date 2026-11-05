@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CraftWorld — Minecraft Server</title>
+  <meta name="description" content="CraftWorld Minecraft serveri: Survival, Skyblock, Minigames. Hoziroq qo'shiling!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#home" class="logo">⛏ <span data-server-name>CraftWorld</span></a>
+    <button class="burger" id="burger" aria-label="Menyu">☰</button>
+    <nav id="menu">
+      <a href="#modes">Rejimlar</a>
+      <a href="#ranks">Ranklar</a>
+      <a href="#rules">Qoidalar</a>
+      <a href="#join">Qo'shilish</a>
+      <a href="#" class="btn btn-small" data-discord target="_blank" rel="noopener">Discord</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <h1 data-server-name>CraftWorld</h1>
+      <p class="tagline">O'zbekistonning eng qiziqarli Minecraft serveri</p>
+
+      <div class="ip-box">
+        <span id="ipText">play.craftworld.uz</span>
+        <button class="btn" id="copyBtn">NUSXALASH</button>
+      </div>
+
+      <div class="status" id="status">
+        <span class="dot"></span>
+        <span id="statusText">Tekshirilmoqda...</span>
+      </div>
+      <p class="version" id="versionText"></p>
+    </div>
+  </section>
+
+  <section class="section" id="modes">
+    <h2>O'yin rejimlari</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="icon">🌲</div>
+        <h3>Survival</h3>
+        <p>Klassik omon qolish. Yer himoyasi, iqtisod va do'stlar bilan qurilish.</p>
+      </article>
+      <article class="card">
+        <div class="icon">☁️</div>
+        <h3>Skyblock</h3>
+        <p>Kichik orolda boshlang, o'zingizning imperiyangizni quring.</p>
+      </article>
+      <article class="card">
+        <div class="icon">⚔️</div>
+        <h3>PvP Arena</h3>
+        <p>Kitlar, reyting va haftalik turnirlar. Eng kuchlisi kim?</p>
+      </article>
+      <article class="card">
+        <div class="icon">🎮</div>
+        <h3>Minigames</h3>
+        <p>BedWars, SkyWars, Parkour va boshqa o'nlab mini o'yinlar.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section dark" id="ranks">
+    <h2>Ranklar</h2>
+    <div class="grid">
+      <article class="card rank">
+        <h3 class="c-green">VIP</h3>
+        <ul>
+          <li>Rangli chat</li>
+          <li>/kit vip</li>
+          <li>3 ta home</li>
+        </ul>
+        <p class="price">15 000 so'm</p>
+      </article>
+      <article class="card rank featured">
+        <div class="badge">MASHHUR</div>
+        <h3 class="c-gold">PREMIUM</h3>
+        <ul>
+          <li>Barcha VIP imkoniyatlari</li>
+          <li>/fly (lobby)</li>
+          <li>10 ta home</li>
+          <li>Maxsus particle</li>
+        </ul>
+        <p class="price">35 000 so'm</p>
+      </article>
+      <article class="card rank">
+        <h3 class="c-purple">LEGEND</h3>
+        <ul>
+          <li>Barcha Premium imkoniyatlari</li>
+          <li>/kit legend</li>
+          <li>Cheksiz home</li>
+          <li>Maxsus tag</li>
+        </ul>
+        <p class="price">70 000 so'm</p>
+      </article>
+    </div>
+    <p class="note">Narxlar va imkoniyatlarni o'zingizning serveringizga moslab o'zgartiring.</p>
+  </section>
+
+  <section class="section" id="rules">
+    <h2>Qoidalar</h2>
+    <ol class="rules">
+      <li>Boshqa o'yinchilarni hurmat qiling, so'kinmang.</li>
+      <li>Cheat, hack va xato (bug) dan foydalanish taqiqlanadi.</li>
+      <li>Griefing (birovning qurilmasini buzish) taqiqlanadi.</li>
+      <li>Reklama va spam taqiqlanadi.</li>
+      <li>Admin qarori yakuniy hisoblanadi.</li>
+    </ol>
+  </section>
+
+  <section class="section dark" id="join">
+    <h2>Qanday qo'shilaman?</h2>
+    <div class="steps">
+      <div class="step"><span>1</span><p>Minecraft Java Edition ni oching</p></div>
+      <div class="step"><span>2</span><p>Multiplayer → Add Server</p></div>
+      <div class="step"><span>3</span><p>IP manzilni kiriting: <b class="ip-inline">play.craftworld.uz</b></p></div>
+      <div class="step"><span>4</span><p>Join Server bosing va o'ynang!</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> <span data-server-name>CraftWorld</span>. Bu sayt Mojang yoki Microsoft bilan bog'liq emas.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
+  
